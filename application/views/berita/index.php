@@ -44,6 +44,7 @@
                                 <th>Headline</th>
                                 <th>Isi</th>
                                 <th>Pengirim</th>
+                                <th>Tanggal publish</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -55,6 +56,7 @@
                                     <td><?= $b['headline']; ?></td>
                                     <td><?= $b['isi_berita']; ?></td>
                                     <td><?= $b['pengirim']; ?></td>
+                                    <td><?= $b['tanggal_publish']; ?></td>
                                     <td>
                                         <a href="<?= base_url('berita/edit/' . $b['idberita']); ?>" class="btn btn-sm btn-info">Edit</a>
                                         <a href="<?= base_url('berita/hapus/' . $b['idberita']); ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus berita ini?')">Hapus</a>
